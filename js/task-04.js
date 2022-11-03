@@ -5,15 +5,13 @@ let counterValue = 0;
 
 const decrButtonEl = document.querySelector('button[data-action="decrement"]');
 const incrButtonEl = document.querySelector('button[data-action="increment"]');
-const decrvalue = -1;
-const incrvalue = 1;
 
 const changeValueMinus = () => {
-    counterEl.innerHTML = counterValue += decrvalue;
+    counterEl.innerHTML = counterValue -= 1;
 }
 
 const changeValuePlus = () => {
-    counterEl.innerHTML = counterValue += incrvalue;
+    counterEl.innerHTML = counterValue += 1;
 }
 
 decrButtonEl.addEventListener('click', changeValueMinus);
